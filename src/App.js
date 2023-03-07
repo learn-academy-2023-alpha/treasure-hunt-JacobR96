@@ -47,10 +47,12 @@ setBoard(updatedBoard)}
         key={index}
         index={index}
         handleGamePlay={handleGamePlay}
-        
         />
       )})}
+ 
+
       </div>
+      
     </>
   )
 }
