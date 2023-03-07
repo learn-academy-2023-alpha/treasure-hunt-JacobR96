@@ -24,10 +24,12 @@ const handleGamePlay = (index)=> {
 let updatedBoard = [... board]
 if (index ===treasureLocation){
 updatedBoard[index] = "⭐️"
-setBoard(updatedBoard)}
+setBoard(updatedBoard)
+alert("you are the winner")}
 else if (index ===bombLocation){
   updatedBoard[index] = "💣"
-  setBoard(updatedBoard)}
+  setBoard(updatedBoard)
+  alert("you lost buddy")}
 else{
   updatedBoard[index] = "🏴‍☠️"
 setBoard(updatedBoard)}
@@ -45,6 +47,7 @@ setBoard(updatedBoard)}
         key={index}
         index={index}
         handleGamePlay={handleGamePlay}
+        
         />
       )})}
       </div>
